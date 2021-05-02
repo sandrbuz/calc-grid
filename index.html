@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid-calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
-    <div class="item item1 input"><form name="form"><input type="text"
+    <div class="item item1 input"><form name="form"><input id="inp" type="text"
         name="textview" readonly></form></div>
     <div class="item item2 clean" onclick="clean()">C</div>
     <div class="item item3 back" onclick="back()">&larr;</div>
@@ -28,7 +28,7 @@
     <div class="item item4" onclick="insert('1')">1</div>
     <div class="item item4" onclick="insert('2')">2</div>
     <div class="item item4" onclick="insert('3')">3</div>
-    <div class="item item4 equal">=</div>
+    <div class="item item4 equal" onclick='equal()'>=</div>
     <div class="item item4 zero" onclick="insert('0')">0</div>
     <div class="item item4" onclick="insert('.')">.</div>
     <script src="script.js"></script>
